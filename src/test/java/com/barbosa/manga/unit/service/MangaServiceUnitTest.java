@@ -33,13 +33,15 @@ public class MangaServiceUnitTest {
     @MockBean
     private RestTemplate template;
 
+    // private templ something = template.getForEntity(any(String.class);
+
     @Test
     public void testGetMangasByTitle() throws IOException {
         // Parsing mock file
         MangaResult mRs = JsonUtils.jsonFile2Object("ken.json", MangaResult.class);
         // Mocking remote service
         when(template.getForEntity(any(String.class), any(Class.class)))
-                .thenReturn(new ResponseEntity(mRs, HttpStatus.OK));
+            .thenReturn(new ResponseEntity(mRs, HttpStatus.OK));
         // I search for goku but system will use mocked response containing only ken, so
         // I can check that mock is used.
         List<Manga> mangasByTitle = mangaService.getMangasByTitle("goku");

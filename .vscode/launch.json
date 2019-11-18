@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MangaApplication",
+            "request": "launch",
+            "mainClass": "com.barbosa.manga.MangaApplication",
+            "projectName": "Manga"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MangaApplication",
+            "request": "launch",
+            "mainClass": "com.barbosa.manga.MangaApplication",
+            "projectName": "Manga"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MangaApplication<manga>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.barbosa.manga.MangaApplication",
+            "projectName": "manga",
+            "args": ""
+        }
+    ]
+}
